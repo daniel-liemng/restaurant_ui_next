@@ -11,7 +11,7 @@ const AboutInfo = () => {
       </h2>
 
       <div className='grid grid-cols-12 gap-4 mt-24 px-24'>
-        <div className='col-span-6'>
+        <div className='col-span-12 md:col-span-6'>
           <motion.div
             initial='hidden'
             whileInView='visible'
@@ -32,7 +32,8 @@ const AboutInfo = () => {
             />
           </motion.div>
         </div>
-        <div className='col-span-6 flex justify-center'>
+
+        <div className='col-span-12 md:col-span-6 flex justify-center'>
           <div>
             <p className='mb-12 text-xl leading-7'>
               Home design, inside and out, carries confidence and energy, so we

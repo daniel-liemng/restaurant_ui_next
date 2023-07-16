@@ -12,7 +12,7 @@ const Hero = () => {
       </h1>
 
       <div className='h-full grid grid-cols-4 px-14 py-10 gap-14'>
-        <div className='h-full col-span-1'>
+        <div className='h-full col-span-4 md:col-span-1'>
           <div className='h-full flex flex-col justify-end items-center'>
             <Divider />
             <p className='p-5'>
@@ -50,7 +50,7 @@ const Hero = () => {
             hidden: { opacity: 0, y: 100 },
             visible: { opacity: 1, y: 0 },
           }}
-          className=' h-[70vh] w-full col-span-2'
+          className=' h-[70vh] w-full col-span-4 md:col-span-2'
         >
           <Image
             src='/hero-2.jpg'
@@ -61,7 +61,7 @@ const Hero = () => {
           />
         </motion.div>
 
-        <div className='h-full col-span-1'>
+        <div className='h-full col-span-4 md:col-span-1'>
           <div className='h-full flex flex-col-reverse justify-end items-center'>
             <Divider />
             <p className='p-5'>

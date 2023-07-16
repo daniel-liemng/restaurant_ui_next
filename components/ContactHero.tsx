@@ -17,7 +17,7 @@ const ContactHero: React.FC<ContactHeroProps> = ({ title, imgUrl }) => {
       </h1>
 
       <div className='h-full grid grid-cols-4 py-10 gap-32'>
-        <div className='h-full col-span-1'>
+        <div className='h-full col-span-4 md:col-span-1'>
           <motion.div
             initial='hidden'
             whileInView='visible'
@@ -50,7 +50,7 @@ const ContactHero: React.FC<ContactHeroProps> = ({ title, imgUrl }) => {
             hidden: { opacity: 0, y: 100 },
             visible: { opacity: 1, y: 0 },
           }}
-          className=' h-full w-full col-span-2'
+          className=' h-full w-full col-span-4 md:col-span-2'
         >
           <Image
             src={imgUrl}
@@ -62,7 +62,7 @@ const ContactHero: React.FC<ContactHeroProps> = ({ title, imgUrl }) => {
           />
         </motion.div>
 
-        <div className='h-full col-span-1'>
+        <div className='h-full col-span-4 md:col-span-1'>
           <motion.div
             initial='hidden'
             whileInView='visible'

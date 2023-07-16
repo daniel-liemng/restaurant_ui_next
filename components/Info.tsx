@@ -16,7 +16,7 @@ const Info = () => {
         </h2>
       </div>
 
-      <div className='container mx-auto flex justify-between items-center gap-10 mt-20 h-full'>
+      <div className='container mx-auto flex justify-between items-center flex-wrap gap-10 mt-20 h-full w-full'>
         <motion.div
           initial='hidden'
           whileInView='visible'
@@ -44,7 +44,7 @@ const Info = () => {
 
         <div className='border-l border-slate-500 h-[550px] w-1' />
 
-        <div className='flex-1 h-[550px] w-full flex justify-center items-center'>
+        <div className='flex-1 h-[550px] w-full justify-center items-center md:flex'>
           <div className='container mx-auto w-1/2 relative'>
             <motion.div
               initial='hidden'

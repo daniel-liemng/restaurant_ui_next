@@ -7,8 +7,8 @@ import { BiSolidQuoteAltRight } from 'react-icons/bi';
 const Testimonial = () => {
   return (
     <section className='container mx-auto w-2/3 my-36'>
-      <div className='flex gap-5'>
-        <div className='flex-1 flex flex-col justify-center'>
+      <div className='flex gap-5 flex-wrap'>
+        <div className='flex-1 flex flex-col justify-center flex-wrap'>
           <motion.div
             initial='hidden'
             whileInView='visible'
@@ -25,7 +25,8 @@ const Testimonial = () => {
             <BiSolidQuoteAltRight fontSize={60} />
           </motion.div>
         </div>
-        <div className='flex-1'>
+
+        <div className='flex-1 flex-wrap'>
           <div className='grid grid-cols-6 gap-4'>
             <motion.div
               initial='hidden'
@@ -36,9 +37,9 @@ const Testimonial = () => {
                 hidden: { opacity: 0, x: -50 },
                 visible: { opacity: 1, x: 0 },
               }}
-              className='col-span-3 border border-slate-600 p-10'
+              className='col-span-6 md:col-span-3 border border-slate-600 p-10'
             >
-              <div className='flex gap-2 items-center'>
+              <div className='flex gap-2 items-center flex-wrap'>
                 <div>
                   <Image
                     src='/person-1.jpg'
@@ -68,7 +69,7 @@ const Testimonial = () => {
                 hidden: { opacity: 0, x: 100 },
                 visible: { opacity: 1, x: 0 },
               }}
-              className='col-span-3 border border-slate-600 p-10'
+              className='col-span-6 md:col-span-3 border border-slate-600 p-10'
             >
               <div className='flex gap-2 items-center'>
                 <div>
@@ -100,7 +101,7 @@ const Testimonial = () => {
                 hidden: { opacity: 0, x: -100 },
                 visible: { opacity: 1, x: 0 },
               }}
-              className='col-span-3 border border-slate-600 p-10'
+              className='col-span-6 md:col-span-3 border border-slate-600 p-10'
             >
               <div className='flex gap-2 items-center'>
                 <div>
@@ -132,7 +133,7 @@ const Testimonial = () => {
                 hidden: { opacity: 0, x: 150 },
                 visible: { opacity: 1, x: 0 },
               }}
-              className='col-span-3 border border-slate-600 p-10'
+              className='col-span-6 md:col-span-3 border border-slate-600 p-10'
             >
               <div className='flex gap-2 items-center'>
                 <div>

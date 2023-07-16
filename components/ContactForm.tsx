@@ -21,7 +21,7 @@ const Contact = () => {
 
         <form className='w-full mt-16'>
           <div className='grid grid-cols-12 gap-10'>
-            <div className='col-span-6'>
+            <div className='col-span-12 md:col-span-6'>
               <div className='border-b border-gold py-2'>
                 <input
                   className='appearance-none bg-transparent border-none w-full text-gray-700 text-xl mr-3 py-1 px-2 leading-tight focus:outline-none font-title placeholder:text-gray-700'
@@ -31,7 +31,7 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className='col-span-6'>
+            <div className='col-span-12 md:col-span-6'>
               <div className='border-b border-gold py-2'>
                 <input
                   className='appearance-none bg-transparent border-none w-full text-gray-700 text-xl mr-3 py-1 px-2 leading-tight focus:outline-none font-title placeholder:text-gray-700'

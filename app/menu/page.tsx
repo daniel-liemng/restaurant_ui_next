@@ -27,8 +27,8 @@ const MenuItem = ({
   price: string;
 }) => {
   return (
-    <div className='flex gap-1 mb-6'>
-      <div className='flex-1'>
+    <div className='flex flex-wrap gap-1 mb-6'>
+      <div className='md:flex-1'>
         <Link
           href={`/menu/${slug}`}
           className='text-4xl font-title font-semibold hover:underline'
@@ -86,7 +86,7 @@ const MenuPage = () => {
                 hidden: { opacity: 0, scale: 0.8 },
                 visible: { opacity: 1, scale: 1 },
               }}
-              className='col-span-6'
+              className='col-span-12 md:col-span-6'
             >
               <h3 className='text-3xl font-semibold mb-6 text-gray-700'>
                 Breakfast
@@ -111,7 +111,7 @@ const MenuPage = () => {
                 hidden: { opacity: 0, scale: 0.8 },
                 visible: { opacity: 1, scale: 1 },
               }}
-              className='col-span-6'
+              className='col-span-12 md:col-span-6'
             >
               <h3 className='text-3xl font-semibold mb-6 text-gray-700'>
                 Lunch
@@ -136,7 +136,7 @@ const MenuPage = () => {
                 hidden: { opacity: 0, scale: 0.8 },
                 visible: { opacity: 1, scale: 1 },
               }}
-              className='col-span-6'
+              className='col-span-12 md:col-span-6'
             >
               <h3 className='text-3xl font-semibold mb-6 text-gray-700'>
                 Dinner
@@ -165,7 +165,7 @@ const MenuPage = () => {
                 hidden: { opacity: 0, scale: 0.8 },
                 visible: { opacity: 1, scale: 1 },
               }}
-              className='col-span-6'
+              className='col-span-12 md:col-span-6'
             >
               <h3 className='text-3xl font-semibold mb-6 text-gray-700'>
                 Soft Drinks
@@ -190,7 +190,7 @@ const MenuPage = () => {
                 hidden: { opacity: 0, scale: 0.8 },
                 visible: { opacity: 1, scale: 1 },
               }}
-              className='col-span-6'
+              className='col-span-12 md:col-span-6'
             >
               <h3 className='text-3xl font-semibold mb-6 text-gray-700'>
                 Alcoholic

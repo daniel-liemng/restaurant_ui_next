@@ -34,7 +34,7 @@ const NewsItem = ({
 
 const NewsPage = () => {
   return (
-    <section className='my-16'>
+    <section className='mt-16'>
       <div className='container mx-auto px-36'>
         <h1 className='my-12 text-8xl font-title text-center text-gray-700 tracking-tighter'>
           Latest News

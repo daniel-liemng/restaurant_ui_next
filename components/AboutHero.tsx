@@ -28,7 +28,7 @@ const AboutHero: React.FC<AboutHeroProps> = ({
       </h1>
 
       <div className='h-full grid grid-cols-4 py-10 gap-32'>
-        <div className='h-full col-span-1'>
+        <div className='h-full col-span-4 md:col-span-1'>
           <div className='h-full flex flex-col-reverse justify-end'>
             <Divider />
             <p className='p-5'>{text1}</p>
@@ -64,7 +64,7 @@ const AboutHero: React.FC<AboutHeroProps> = ({
             hidden: { opacity: 0, y: 100 },
             visible: { opacity: 1, y: 0 },
           }}
-          className=' h-full w-full col-span-2'
+          className=' h-full w-full col-span-4 md:col-span-2'
         >
           <Image
             src={imgUrl}
@@ -76,7 +76,7 @@ const AboutHero: React.FC<AboutHeroProps> = ({
           />
         </motion.div>
 
-        <div className='h-full col-span-1'>
+        <div className='h-full col-span-4 md:col-span-1'>
           <div className='h-full flex flex-col justify-start'>
             <Divider />
             <p className='p-5'>{text2}</p>
