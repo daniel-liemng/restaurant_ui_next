@@ -6,6 +6,9 @@ import Image from 'next/image';
 const MenuDetailsPage = ({
   name = 'Keto Sausage & Egg Skillet',
   desc = 'Layered over the hash are scrambled eggs and savory-sweet pork sausage crumbles. Green onions and shredded cheddar are sprinkled on top.',
+}: {
+  name: string;
+  desc: string;
 }) => {
   return (
     <section className='my-16'>
