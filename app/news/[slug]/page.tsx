@@ -3,22 +3,23 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 
-const NewsDetailsPage = ({
-  name = "Our Restaurant's Guide to Hosting Memorable Events",
-  date = 'February 14, 2023',
-  desc = 'Voluptatem laboriosam repellendus. Eaque exercitationem et sed quis at corporis eaque commodi asperiores. Aliquam autem suscipit occaecati magni ut veniam eos. Corrupti omnis ea. Rerum numquam perferendis. Laudantium neque odio reiciendis sed itaque quod enim autem cumque.',
-}) => {
+const NewsDetailsPage = () => {
   return (
     <section className='my-16'>
       <div className='container mx-auto px-12'>
         <h2 className='my-12 text-3xl font-title text-center text-gray-700 tracking-tighter'>
-          {date}
+          February 14, 2023
         </h2>
         <h1 className='my-12 text-8xl font-title text-center text-gray-700 tracking-tighter'>
-          {name}
+          Our Restaurant's Guide to Hosting Memorable Events
         </h1>
 
-        <h6 className='text-2xl text-center my-6'>{desc}</h6>
+        <h6 className='text-2xl text-center my-6'>
+          Voluptatem laboriosam repellendus. Eaque exercitationem et sed quis at
+          corporis eaque commodi asperiores. Aliquam autem suscipit occaecati
+          magni ut veniam eos. Corrupti omnis ea. Rerum numquam perferendis.
+          Laudantium neque odio reiciendis sed itaque quod enim autem cumque.
+        </h6>
 
         <motion.div
           initial='hidden'
