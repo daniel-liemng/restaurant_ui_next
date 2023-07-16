@@ -58,7 +58,6 @@ const ContactHero: React.FC<ContactHeroProps> = ({ title, imgUrl }) => {
             className='h-[500px] w-full object-cover'
             width={500}
             height={500}
-            style={{ width: '100%', height: '500px', objectFit: 'cover' }}
           />
         </motion.div>
 
