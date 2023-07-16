@@ -3,21 +3,18 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 
-const MenuDetailsPage = ({
-  name = 'Keto Sausage & Egg Skillet',
-  desc = 'Layered over the hash are scrambled eggs and savory-sweet pork sausage crumbles. Green onions and shredded cheddar are sprinkled on top.',
-}: {
-  name: string;
-  desc: string;
-}) => {
+const MenuDetailsPage = () => {
   return (
     <section className='my-16'>
       <div className='container mx-auto px-12'>
         <h1 className='my-12 text-8xl font-title text-center text-gray-700 tracking-tighter'>
-          {name}
+          Keto Sausage & Egg Skillet
         </h1>
 
-        <h6 className='text-2xl text-center my-6'>{desc}</h6>
+        <h6 className='text-2xl text-center my-6'>
+          Layered over the hash are scrambled eggs and savory-sweet pork sausage
+          crumbles. Green onions and shredded cheddar are sprinkled on top.
+        </h6>
 
         <motion.div
           initial='hidden'
