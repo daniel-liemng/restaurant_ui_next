@@ -1,24 +1,47 @@
-import React from 'react';
+import Link from 'next/link';
 
-const leftMenu = ['chef', 'menu', 'reservation'];
-const rightMenu = ['news', 'about', 'contact'];
+const leftMenu = [
+  { name: 'chef', link: '/chef' },
+  { name: 'menu', link: '/menu' },
+  { name: 'reservation', link: '/reservation' },
+];
+const rightMenu = [
+  { name: 'news', link: '/news' },
+  { name: 'about', link: '/about' },
+  { name: 'contact', link: '/contact' },
+];
 
 const Header = () => {
   return (
-    <div className='w-full h-24 px-8 flex justify-between items-center bg-gold text-gray-700'>
+    <div className='container mx-auto w-full h-24 flex justify-between items-center bg-gold text-gray-700'>
       <div className='flex items-center gap-6'>
         {leftMenu.map((item) => (
-          <h4 className='text-lg uppercase font-semibold'>{item}</h4>
+          <Link
+            href={item.link}
+            key={item.name}
+            className='text-lg uppercase font-semibold hover:underline transition'
+          >
+            {item.name}
+          </Link>
         ))}
       </div>
 
-      <h3 className='text-4xl font-semibold tracking-tight capitalize text-gray-700'>
+      <Link
+        href='/'
+        className='text-4xl font-semibold tracking-tight capitalize text-gray-700'
+      >
         Silver Spoon
-      </h3>
+      </Link>
 
       <div className='flex items-center gap-6'>
         {rightMenu.map((item) => (
-          <h4 className='text-lg uppercase font-semibold'>{item}</h4>
+          <Link
+            href={item.link}
+            key={item.name}
+            className='text-lg uppercase font-semibold hover:underline transition'
+          >
+            {item.name}
+          </Link>
         ))}
       </div>
     </div>

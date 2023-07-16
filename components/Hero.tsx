@@ -13,10 +13,7 @@ const Hero = () => {
 
       <div className='h-full grid grid-cols-4 px-14 py-10 gap-14'>
         <div className='h-full col-span-1'>
-          <motion.div
-            animate={{}}
-            className='h-full flex flex-col justify-end items-center'
-          >
+          <div className='h-full flex flex-col justify-end items-center'>
             <Divider />
             <p className='p-5'>
               From 2007 Silver Spoon provides a unique dining experience
@@ -33,14 +30,15 @@ const Hero = () => {
               className='w-full'
             >
               <Image
-                src='/hero_1.jpg'
+                src='/hero-1.jpg'
                 alt='hero1'
                 className='w-full h-[300px] object-cover'
                 width={300}
                 height={300}
+                style={{ width: '300px', height: '300px', objectFit: 'cover' }}
               />
             </motion.div>
-          </motion.div>
+          </div>
         </div>
 
         <motion.div
@@ -52,10 +50,10 @@ const Hero = () => {
             hidden: { opacity: 0, y: 100 },
             visible: { opacity: 1, y: 0 },
           }}
-          className=' h-full w-full col-span-2'
+          className=' h-[70vh] w-full col-span-2'
         >
           <Image
-            src='/hero_2.jpg'
+            src='/hero-2.jpg'
             alt='hero2'
             className='h-[70vh] w-full object-cover'
             width={1000}
@@ -81,11 +79,12 @@ const Hero = () => {
               className='w-full'
             >
               <Image
-                src='/hero_3.jpg'
+                src='/hero-3.jpg'
                 alt='hero3'
                 className='w-full h-[300px] object-cover'
                 width={300}
                 height={300}
+                style={{ width: '300px', height: '300px', objectFit: 'cover' }}
               />
             </motion.div>
           </div>

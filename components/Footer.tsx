@@ -46,8 +46,9 @@ const Footer = () => {
         </div>
       </div>
 
-      <h6 className='my-4 text-center text-2xl font-normal'>
-        &copy; {new Date().getFullYear()} - All Right Reserved
+      <h6 className='mt-4 text-center text-2xl font-title'>
+        &copy; {new Date().getFullYear()} - <b>Liem Nguyen</b> - All Right
+        Reserved
       </h6>
     </footer>
   );

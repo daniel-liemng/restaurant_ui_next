@@ -6,7 +6,7 @@ import { BiSolidQuoteAltRight } from 'react-icons/bi';
 
 const Testimonial = () => {
   return (
-    <section className='container mx-auto w-2/3'>
+    <section className='container mx-auto w-2/3 my-36'>
       <div className='flex gap-5'>
         <div className='flex-1 flex flex-col justify-center'>
           <motion.div

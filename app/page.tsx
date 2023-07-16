@@ -1,4 +1,4 @@
-import Contact from '@/components/Contact';
+import Contact from '@/components/ContactForm';
 import Divider from '@/components/Divider';
 import Footer from '@/components/Footer';
 import Header from '@/components/Header';
@@ -12,7 +12,6 @@ const HomePage = () => {
     <div>
       <div className='container mx-auto'>
         <div className='h-screen'>
-          <Header />
           <Hero />
         </div>
         <Divider custom='my-20' />
@@ -21,7 +20,6 @@ const HomePage = () => {
       <Parallax />
       <Testimonial />
       <Contact />
-      <Footer />
     </div>
   );
 };
