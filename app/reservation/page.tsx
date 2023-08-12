@@ -5,7 +5,7 @@ import React from 'react';
 const ReservationPage = () => {
   return (
     <>
-      <ContactHero title='Reservation' imgUrl='/hero_2.jpg' />
+      <ContactHero title='Reservation' imgUrl='/hero-2.jpg' />
       <ContactForm />
     </>
   );

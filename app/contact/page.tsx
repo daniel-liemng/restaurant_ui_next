@@ -6,7 +6,7 @@ import ContactHero from '@/components/ContactHero';
 const ContactPage = () => {
   return (
     <>
-      <ContactHero title='Contact Us' imgUrl='/hero_2.jpg' />
+      <ContactHero title='Contact Us' imgUrl='/hero-2.jpg' />
 
       <ContactForm />
     </>
